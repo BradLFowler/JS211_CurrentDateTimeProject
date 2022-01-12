@@ -14,13 +14,19 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-let n = 5;
-let text = n.toString()
-console.log(typeof text)
+const numToStr = () => {
+n = 5;
+ntostr = n.toString();
+document.getElementById("numtostr").innerHTML = numToStr;
+}
+console.log(numToStr)
 // Write a JavaScript program to convert a string to the number.
-let s = "String";
-let x = + s;
-console.log(typeof x)
+const strToNum = () => {
+s = "String";
+p = Number(s)
+document.getElementById("strtonum").innerHTML = strToNum;
+}
+console.log(strToNum)
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
   // * Null
@@ -28,30 +34,37 @@ console.log(typeof x)
   // * Number
   // * NaN
   // * String
-let b = true
-console.log(typeof b)
+const differentDataTypes = () => {
+  b = typeof true;
 
-let nll = null
-console.log(typeof nll)
+  z = typeof null;
 
-let u = undefined
-console.log(typeof u)
+  u = typeof undefined;
 
-let numb = 100
-console.log(typeof numb)
+  l = typeof Number;
 
-let nan = NaN
-console.log(typeof nan)
+  e = typeof NaN;
 
-let str = ""
-console.log(typeof str)
+  h = typeof "";
+
+  types = b + " " + z + " " + u + " " + l + " " + e + " " + h;
+
+  document.getElementById("datatypes").innerHTML = differentDataTypes;
+}
+
 // Write a JavaScript program that adds 2 numbers together.
 const addTwoNumbers = (num1, num2) => {
-  return num1 + num2
+  
+  document.getElementById("addtwonum").innerHTML = addTwoNumbers;
+
+  return num1 + num2;
 }
-console.log(addTwoNumbers(7, 96))
+console.log(addTwoNumbers)
 // Write a JavaScript program that runs only when 2 things are true.
 const twoThingsTrue = () => {
+  document.getElementById("twotrue").innerHTML = twoThingsTrue;
+  k = 5
+  y = 7
   if(k == y){
     true
   }
@@ -59,8 +72,12 @@ const twoThingsTrue = () => {
     false
   }
 }
+console.log(twoThingsTrue)
 // Write a JavaScript program that runs when 1 of 2 things are true.
 const oneOfTwoThingsTrue = () => {
+  document.getElementById("oneorothertrue").innerHTML = oneOfTwoThingsTrue
+  f = 10
+  j = 11
   if(f || j){
     true
   }
@@ -68,16 +85,20 @@ const oneOfTwoThingsTrue = () => {
     false
   }
 }
+console.log(oneOfTwoThingsTrue)
 // Write a JavaScript program that runs when both things are not true.  
 const bothThingsNotTrue = () => {
+  document.getElementById("bothnottrue").innerHTML = bothThingsNotTrue
+  v = 8
+  c = 9
   if(v !== c){
     true
   }
   else{
     false
   }
-
 }
+console.log(bothThingsNotTrue)
 // ***************************
 //         PART TWO
 // ***************************
