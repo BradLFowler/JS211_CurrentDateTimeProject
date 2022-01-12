@@ -6,7 +6,6 @@
 // ***************************
 // Write a JavaScript program to display the current day and time, start with:
 console.log(new Date)
-
 const displayDate = () => {
   const currentDate = new Date()
 
@@ -15,13 +14,13 @@ const displayDate = () => {
  
 
 // Write a JavaScript program to convert a number to a string.
-
-
-
+let n = 5;
+let text = n.toString()
+console.log(typeof text)
 // Write a JavaScript program to convert a string to the number.
-
-
-
+let s = "String";
+let x = + s;
+console.log(typeof x)
 // Write a JavaScript program that takes in different datatypes and prints out whether they are a:
   // * Boolean
   // * Null
@@ -29,23 +28,56 @@ const displayDate = () => {
   // * Number
   // * NaN
   // * String
-  
+let b = true
+console.log(typeof b)
 
-  
+let nll = null
+console.log(typeof nll)
+
+let u = undefined
+console.log(typeof u)
+
+let numb = 100
+console.log(typeof numb)
+
+let nan = NaN
+console.log(typeof nan)
+
+let str = ""
+console.log(typeof str)
 // Write a JavaScript program that adds 2 numbers together.
-
-
-
+const addTwoNumbers = (num1, num2) => {
+  return num1 + num2
+}
+console.log(addTwoNumbers(7, 96))
 // Write a JavaScript program that runs only when 2 things are true.
-
-
-
+const twoThingsTrue = () => {
+  if(k == y){
+    true
+  }
+  else {
+    false
+  }
+}
 // Write a JavaScript program that runs when 1 of 2 things are true.
-
-
-
+const oneOfTwoThingsTrue = () => {
+  if(f || j){
+    true
+  }
+  else{
+    false
+  }
+}
 // Write a JavaScript program that runs when both things are not true.  
+const bothThingsNotTrue = () => {
+  if(v !== c){
+    true
+  }
+  else{
+    false
+  }
 
+}
 // ***************************
 //         PART TWO
 // ***************************
